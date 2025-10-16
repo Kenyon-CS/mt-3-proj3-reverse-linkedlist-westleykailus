@@ -22,10 +22,7 @@ Replace the TODO with a standard iterative reversal:
 Node* prev = nullptr;
 Node* curr = head_;
 while (curr) {
-  Node* next = curr->next;
-  curr->next = prev;
-  prev = curr;
-  curr = next;
+  // make each node point to the node before it.
 }
 head_ = prev;
 ```
